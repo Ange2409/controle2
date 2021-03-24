@@ -13,46 +13,11 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
     def test_10(self):
         try:
 >           from .main  import Note
+E             File "/home/stidsem4/iut/2021/controle/ange-vivien.bathossi/c16_03/main.py", line 76
+E               notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+E           IndentationError: unexpected indent
 
-test_16_03.py:94: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-    note1 = ('eleve1', 'math', 13)
-    note2 = ('eleve1', 'physique', 15)
-    note3 = ('eleve1', 'math', 13)
-    note4 = ('eleve1', 'eco', 12)
-    note5 = ('eleve1', 'eco', 13)
-    note6 = ('eleve1', 'math', 12)
-    note7 = ('eleve2', 'math', 13)
-    note8 = ('eleve2', 'math', 14)
-    
-    notes = [note1, note2, note3, note4, note5, note6,note7,note8]
-    
-    moyelev1 = (notes[0][2]+notes[1][2]+notes[2][2]+notes[3][2]+notes[4][2]+notes[5][2])/6
-    print("la moyenne de l'élévé 1 = ",moyelev1)
-    #4)b
-    moyelev1_math = (notes[0][2]+notes[2][2]+notes[5][2])/3
-    print("la moyenne de l'élévé 1 en math = ",moyelev1_math)
-    #4)c
-    notes_tuples = [note1, note2, note3, note4, note5, note6,note7,note8]
-    def moyenne(notes,eleve,matiere):
-      maliste = [i for i in note if i[1] == matiere ]
-      moyenne = sum(a[2]for a in liste)/len(liste)
-      print("La moyenne de",eleve,"en",matiere,"est de",moyenne)
-    
->   moyenne(notes_tuples,"eleve1","math")
-
-main.py:24: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
-eleve = 'eleve1', matiere = 'math'
-
-    def moyenne(notes,eleve,matiere):
->     maliste = [i for i in note if i[1] == matiere ]
-E     NameError: name 'note' is not defined
-
-main.py:20: NameError
+test_16_03.py:94: IndentationError
 
 During handling of the above exception, another exception occurred:
 
@@ -66,9 +31,6 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
 E          AssertionError: assert False
 
 test_16_03.py:96: AssertionError
------------------------------ Captured stdout call -----------------------------
-la moyenne de l'élévé 1 =  13.0
-la moyenne de l'élévé 1 en math =  12.666666666666666
 _____________________________ Test1603sute.test_4 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
@@ -90,24 +52,11 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
         except ImportError:
             try:
 >               from .main import moyenne_tuple as moyenne_tuples
+E                 File "/home/stidsem4/iut/2021/controle/ange-vivien.bathossi/c16_03/main.py", line 76
+E                   notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+E               IndentationError: unexpected indent
 
-test_16_03.py:19: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-main.py:24: in <module>
-    moyenne(notes_tuples,"eleve1","math")
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
-eleve = 'eleve1', matiere = 'math'
-
-    def moyenne(notes,eleve,matiere):
->     maliste = [i for i in note if i[1] == matiere ]
-E     NameError: name 'note' is not defined
-
-main.py:20: NameError
------------------------------ Captured stdout call -----------------------------
-la moyenne de l'élévé 1 =  13.0
-la moyenne de l'élévé 1 en math =  12.666666666666666
+test_16_03.py:19: IndentationError
 _____________________________ Test1603sute.test_5 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
@@ -115,46 +64,11 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
     def test_5(self):
         try:
 >           from .main  import Note, onotes
+E             File "/home/stidsem4/iut/2021/controle/ange-vivien.bathossi/c16_03/main.py", line 76
+E               notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+E           IndentationError: unexpected indent
 
-test_16_03.py:33: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-    note1 = ('eleve1', 'math', 13)
-    note2 = ('eleve1', 'physique', 15)
-    note3 = ('eleve1', 'math', 13)
-    note4 = ('eleve1', 'eco', 12)
-    note5 = ('eleve1', 'eco', 13)
-    note6 = ('eleve1', 'math', 12)
-    note7 = ('eleve2', 'math', 13)
-    note8 = ('eleve2', 'math', 14)
-    
-    notes = [note1, note2, note3, note4, note5, note6,note7,note8]
-    
-    moyelev1 = (notes[0][2]+notes[1][2]+notes[2][2]+notes[3][2]+notes[4][2]+notes[5][2])/6
-    print("la moyenne de l'élévé 1 = ",moyelev1)
-    #4)b
-    moyelev1_math = (notes[0][2]+notes[2][2]+notes[5][2])/3
-    print("la moyenne de l'élévé 1 en math = ",moyelev1_math)
-    #4)c
-    notes_tuples = [note1, note2, note3, note4, note5, note6,note7,note8]
-    def moyenne(notes,eleve,matiere):
-      maliste = [i for i in note if i[1] == matiere ]
-      moyenne = sum(a[2]for a in liste)/len(liste)
-      print("La moyenne de",eleve,"en",matiere,"est de",moyenne)
-    
->   moyenne(notes_tuples,"eleve1","math")
-
-main.py:24: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
-eleve = 'eleve1', matiere = 'math'
-
-    def moyenne(notes,eleve,matiere):
->     maliste = [i for i in note if i[1] == matiere ]
-E     NameError: name 'note' is not defined
-
-main.py:20: NameError
+test_16_03.py:33: IndentationError
 
 During handling of the above exception, another exception occurred:
 
@@ -168,33 +82,17 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
 E           AssertionError: assert False
 
 test_16_03.py:35: AssertionError
------------------------------ Captured stdout call -----------------------------
-la moyenne de l'élévé 1 =  13.0
-la moyenne de l'élévé 1 en math =  12.666666666666666
 _____________________________ Test1603sute.test_6 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
 
     def test_6(self):
 >       from .main import Note, onotes
+E         File "/home/stidsem4/iut/2021/controle/ange-vivien.bathossi/c16_03/main.py", line 76
+E           notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+E       IndentationError: unexpected indent
 
-test_16_03.py:41: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-main.py:24: in <module>
-    moyenne(notes_tuples,"eleve1","math")
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
-eleve = 'eleve1', matiere = 'math'
-
-    def moyenne(notes,eleve,matiere):
->     maliste = [i for i in note if i[1] == matiere ]
-E     NameError: name 'note' is not defined
-
-main.py:20: NameError
------------------------------ Captured stdout call -----------------------------
-la moyenne de l'élévé 1 =  13.0
-la moyenne de l'élévé 1 en math =  12.666666666666666
+test_16_03.py:41: IndentationError
 _____________________________ Test1603sute.test_8 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
@@ -202,24 +100,11 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
     def test_8(self):
         try:
 >           from .main import Note
+E             File "/home/stidsem4/iut/2021/controle/ange-vivien.bathossi/c16_03/main.py", line 76
+E               notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+E           IndentationError: unexpected indent
 
-test_16_03.py:67: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-main.py:24: in <module>
-    moyenne(notes_tuples,"eleve1","math")
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
-eleve = 'eleve1', matiere = 'math'
-
-    def moyenne(notes,eleve,matiere):
->     maliste = [i for i in note if i[1] == matiere ]
-E     NameError: name 'note' is not defined
-
-main.py:20: NameError
------------------------------ Captured stdout call -----------------------------
-la moyenne de l'élévé 1 =  13.0
-la moyenne de l'élévé 1 en math =  12.666666666666666
+test_16_03.py:67: IndentationError
 _____________________________ Test1603sute.test_9 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
@@ -227,46 +112,11 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
     def test_9(self):
         try:
 >           from .main  import Note
+E             File "/home/stidsem4/iut/2021/controle/ange-vivien.bathossi/c16_03/main.py", line 76
+E               notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+E           IndentationError: unexpected indent
 
-test_16_03.py:87: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-    note1 = ('eleve1', 'math', 13)
-    note2 = ('eleve1', 'physique', 15)
-    note3 = ('eleve1', 'math', 13)
-    note4 = ('eleve1', 'eco', 12)
-    note5 = ('eleve1', 'eco', 13)
-    note6 = ('eleve1', 'math', 12)
-    note7 = ('eleve2', 'math', 13)
-    note8 = ('eleve2', 'math', 14)
-    
-    notes = [note1, note2, note3, note4, note5, note6,note7,note8]
-    
-    moyelev1 = (notes[0][2]+notes[1][2]+notes[2][2]+notes[3][2]+notes[4][2]+notes[5][2])/6
-    print("la moyenne de l'élévé 1 = ",moyelev1)
-    #4)b
-    moyelev1_math = (notes[0][2]+notes[2][2]+notes[5][2])/3
-    print("la moyenne de l'élévé 1 en math = ",moyelev1_math)
-    #4)c
-    notes_tuples = [note1, note2, note3, note4, note5, note6,note7,note8]
-    def moyenne(notes,eleve,matiere):
-      maliste = [i for i in note if i[1] == matiere ]
-      moyenne = sum(a[2]for a in liste)/len(liste)
-      print("La moyenne de",eleve,"en",matiere,"est de",moyenne)
-    
->   moyenne(notes_tuples,"eleve1","math")
-
-main.py:24: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
-eleve = 'eleve1', matiere = 'math'
-
-    def moyenne(notes,eleve,matiere):
->     maliste = [i for i in note if i[1] == matiere ]
-E     NameError: name 'note' is not defined
-
-main.py:20: NameError
+test_16_03.py:87: IndentationError
 
 During handling of the above exception, another exception occurred:
 
@@ -280,14 +130,11 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
 E          AssertionError: assert False
 
 test_16_03.py:89: AssertionError
------------------------------ Captured stdout call -----------------------------
-la moyenne de l'élévé 1 =  13.0
-la moyenne de l'élévé 1 en math =  12.666666666666666
 =========================== short test summary info ============================
 FAILED test_16_03.py::Test1603sute::test_10 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_4 - NameError: name 'note' is not de...
+FAILED test_16_03.py::Test1603sute::test_4 -   File "/home/stidsem4/iut/2021/...
 FAILED test_16_03.py::Test1603sute::test_5 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_6 - NameError: name 'note' is not de...
-FAILED test_16_03.py::Test1603sute::test_8 - NameError: name 'note' is not de...
+FAILED test_16_03.py::Test1603sute::test_6 -   File "/home/stidsem4/iut/2021/...
+FAILED test_16_03.py::Test1603sute::test_8 -   File "/home/stidsem4/iut/2021/...
 FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
-========================= 6 failed, 1 passed in 0.11s ==========================
+========================= 6 failed, 1 passed in 0.09s ==========================
