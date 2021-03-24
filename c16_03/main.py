@@ -45,12 +45,14 @@ class Note:
     Note.instances.append(self)
   def __str__(self):
     return f"{self.__class__.__name__}('{self.eleve}','{self.matiere}','{self.valeur}')"
-  @classmethod 
+  @classmethod
   def vider(cls):
     cls.instances = []
-  @classmethod 
+  @classmethod
   def moyenne(cls):
     return(sum(n.valeur for n in cls.instances)/len(cls.instances))
+
+
 if __name__ == '__main__':
     note1 = ('eleve1', 'math', 13)
     note2 = ('eleve1', 'physique', 15)
@@ -60,18 +62,25 @@ if __name__ == '__main__':
     note6 = ('eleve1', 'math', 12)
     note7 = ('eleve2', 'math', 13)
     note8 = ('eleve2', 'math', 14)
-    notes = [note1, note2, note3, note4, note5, note6,note7,note8]
-    notes_elv1 = [note for note in notes if note[0] == 'eleve1']
-    print(notes_elv1)
-    print(sum(note[2] for note in notes_elv1)/len(notes_elv1))
-    notes_elv1_math = [n for n in notes_elv1 if n[1] == 'math']
-    print(sum(n[2] for n in notes_elv1_math)/len(notes_elv1_math))
-    print(moyenne_tuple(notes, 'eleve1', 'math'))
-    onote = Note('eleve1', 'maths', 13)
-    onotes = [Note(eleve, matiere,  valeur) for eleve, matiere, valeur in notes]
-    onotes = [Note(*note) for note in notes]
-    Note.vider()
-    onotes = [Note(*note) for note in notes]
-    print(Note.moyenne())
 
+    notes = [note1, note2, note3, note4, note5, note6,note7,note8]
+note1 = ('eleve1', 'math', 13)
+note2 = ('eleve1', 'physique', 15)
+note3 = ('eleve1', 'math', 13)
+note4 = ('eleve1', 'eco', 12)
+note5 = ('eleve1', 'eco', 13)
+note6 = ('eleve1', 'math', 12)
+note7 = ('eleve2', 'math', 13)
+note8 = ('eleve2', 'math', 14)
+
+    notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+notes = [note1, note2, note3, note4, note5, note6,note7,note8]
+
+    print(notes_elv1)
+notes_elv1 = [note for note in notes if note[0] == 'eleve1']
+
+    print(sum(note[2] for note in notes_elv1)/len(notes_elv1))
+print(notes_elv1)
+
+    notes_elv1_math = [n for n in notes_elv1]
 
