@@ -35,40 +35,24 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     print("la moyenne de l'élévé 1 en math = ",moyelev1_math)
     #4)c
     notes_tuples = [note1, note2, note3, note4, note5, note6,note7,note8]
-    def moyenne():
-        eleve = input("Entrez le nom de l'élève: ")
-        matiere  = input("Choisissez la matière: ")
-        cpt = 0
-        moyenne = 0
+    def moyenne(notes,eleve,matiere):
+      maliste = [i for i in note if i[1] == matiere ]
+      moyenne = sum(a[2]for a in liste)/len(liste)
+      print("La moyenne de",eleve,"en",matiere,"est de",moyenne)
     
-        for i in range(8):
-            if(notes_tuples[i][0] == eleve):
-                if(notes_tuples[i][1] == matiere):
-                    moyenne += notes_tuples[i][2]
-                    cpt += 1
-        moyenne = moyenne/cpt
-        print(moyenne)
-    
->   moyenne()
+>   moyenne(notes_tuples,"eleve1","math")
 
-main.py:33: 
+main.py:24: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-    def moyenne():
->       eleve = input("Entrez le nom de l'élève: ")
+notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
+eleve = 'eleve1', matiere = 'math'
 
-main.py:20: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    def moyenne(notes,eleve,matiere):
+>     maliste = [i for i in note if i[1] == matiere ]
+E     NameError: name 'note' is not defined
 
-self = <_pytest.capture.DontReadFromInput object at 0x7fed50c19a30>, args = ()
-
-    def read(self, *args):
->       raise OSError(
-            "pytest: reading from stdin while output is captured!  Consider using `-s`."
-        )
-E       OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
-
-/home/stidsem4/.local/lib/python3.9/site-packages/_pytest/capture.py:217: OSError
+main.py:20: NameError
 
 During handling of the above exception, another exception occurred:
 
@@ -85,7 +69,6 @@ test_16_03.py:96: AssertionError
 ----------------------------- Captured stdout call -----------------------------
 la moyenne de l'élévé 1 =  13.0
 la moyenne de l'élévé 1 en math =  12.666666666666666
-Entrez le nom de l'élève: 
 _____________________________ Test1603sute.test_4 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
@@ -110,25 +93,21 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
 
 test_16_03.py:19: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-main.py:33: in <module>
-    moyenne()
-main.py:20: in moyenne
-    eleve = input("Entrez le nom de l'élève: ")
+main.py:24: in <module>
+    moyenne(notes_tuples,"eleve1","math")
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.capture.DontReadFromInput object at 0x7fed50c19a30>, args = ()
+notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
+eleve = 'eleve1', matiere = 'math'
 
-    def read(self, *args):
->       raise OSError(
-            "pytest: reading from stdin while output is captured!  Consider using `-s`."
-        )
-E       OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+    def moyenne(notes,eleve,matiere):
+>     maliste = [i for i in note if i[1] == matiere ]
+E     NameError: name 'note' is not defined
 
-/home/stidsem4/.local/lib/python3.9/site-packages/_pytest/capture.py:217: OSError
+main.py:20: NameError
 ----------------------------- Captured stdout call -----------------------------
 la moyenne de l'élévé 1 =  13.0
 la moyenne de l'élévé 1 en math =  12.666666666666666
-Entrez le nom de l'élève: 
 _____________________________ Test1603sute.test_5 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
@@ -158,40 +137,24 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     print("la moyenne de l'élévé 1 en math = ",moyelev1_math)
     #4)c
     notes_tuples = [note1, note2, note3, note4, note5, note6,note7,note8]
-    def moyenne():
-        eleve = input("Entrez le nom de l'élève: ")
-        matiere  = input("Choisissez la matière: ")
-        cpt = 0
-        moyenne = 0
+    def moyenne(notes,eleve,matiere):
+      maliste = [i for i in note if i[1] == matiere ]
+      moyenne = sum(a[2]for a in liste)/len(liste)
+      print("La moyenne de",eleve,"en",matiere,"est de",moyenne)
     
-        for i in range(8):
-            if(notes_tuples[i][0] == eleve):
-                if(notes_tuples[i][1] == matiere):
-                    moyenne += notes_tuples[i][2]
-                    cpt += 1
-        moyenne = moyenne/cpt
-        print(moyenne)
-    
->   moyenne()
+>   moyenne(notes_tuples,"eleve1","math")
 
-main.py:33: 
+main.py:24: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-    def moyenne():
->       eleve = input("Entrez le nom de l'élève: ")
+notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
+eleve = 'eleve1', matiere = 'math'
 
-main.py:20: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    def moyenne(notes,eleve,matiere):
+>     maliste = [i for i in note if i[1] == matiere ]
+E     NameError: name 'note' is not defined
 
-self = <_pytest.capture.DontReadFromInput object at 0x7fed50c19a30>, args = ()
-
-    def read(self, *args):
->       raise OSError(
-            "pytest: reading from stdin while output is captured!  Consider using `-s`."
-        )
-E       OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
-
-/home/stidsem4/.local/lib/python3.9/site-packages/_pytest/capture.py:217: OSError
+main.py:20: NameError
 
 During handling of the above exception, another exception occurred:
 
@@ -208,7 +171,6 @@ test_16_03.py:35: AssertionError
 ----------------------------- Captured stdout call -----------------------------
 la moyenne de l'élévé 1 =  13.0
 la moyenne de l'élévé 1 en math =  12.666666666666666
-Entrez le nom de l'élève: 
 _____________________________ Test1603sute.test_6 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
@@ -218,25 +180,21 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
 
 test_16_03.py:41: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-main.py:33: in <module>
-    moyenne()
-main.py:20: in moyenne
-    eleve = input("Entrez le nom de l'élève: ")
+main.py:24: in <module>
+    moyenne(notes_tuples,"eleve1","math")
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.capture.DontReadFromInput object at 0x7fed50c19a30>, args = ()
+notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
+eleve = 'eleve1', matiere = 'math'
 
-    def read(self, *args):
->       raise OSError(
-            "pytest: reading from stdin while output is captured!  Consider using `-s`."
-        )
-E       OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+    def moyenne(notes,eleve,matiere):
+>     maliste = [i for i in note if i[1] == matiere ]
+E     NameError: name 'note' is not defined
 
-/home/stidsem4/.local/lib/python3.9/site-packages/_pytest/capture.py:217: OSError
+main.py:20: NameError
 ----------------------------- Captured stdout call -----------------------------
 la moyenne de l'élévé 1 =  13.0
 la moyenne de l'élévé 1 en math =  12.666666666666666
-Entrez le nom de l'élève: 
 _____________________________ Test1603sute.test_8 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
@@ -247,25 +205,21 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
 
 test_16_03.py:67: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-main.py:33: in <module>
-    moyenne()
-main.py:20: in moyenne
-    eleve = input("Entrez le nom de l'élève: ")
+main.py:24: in <module>
+    moyenne(notes_tuples,"eleve1","math")
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.capture.DontReadFromInput object at 0x7fed50c19a30>, args = ()
+notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
+eleve = 'eleve1', matiere = 'math'
 
-    def read(self, *args):
->       raise OSError(
-            "pytest: reading from stdin while output is captured!  Consider using `-s`."
-        )
-E       OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+    def moyenne(notes,eleve,matiere):
+>     maliste = [i for i in note if i[1] == matiere ]
+E     NameError: name 'note' is not defined
 
-/home/stidsem4/.local/lib/python3.9/site-packages/_pytest/capture.py:217: OSError
+main.py:20: NameError
 ----------------------------- Captured stdout call -----------------------------
 la moyenne de l'élévé 1 =  13.0
 la moyenne de l'élévé 1 en math =  12.666666666666666
-Entrez le nom de l'élève: 
 _____________________________ Test1603sute.test_9 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
@@ -295,40 +249,24 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     print("la moyenne de l'élévé 1 en math = ",moyelev1_math)
     #4)c
     notes_tuples = [note1, note2, note3, note4, note5, note6,note7,note8]
-    def moyenne():
-        eleve = input("Entrez le nom de l'élève: ")
-        matiere  = input("Choisissez la matière: ")
-        cpt = 0
-        moyenne = 0
+    def moyenne(notes,eleve,matiere):
+      maliste = [i for i in note if i[1] == matiere ]
+      moyenne = sum(a[2]for a in liste)/len(liste)
+      print("La moyenne de",eleve,"en",matiere,"est de",moyenne)
     
-        for i in range(8):
-            if(notes_tuples[i][0] == eleve):
-                if(notes_tuples[i][1] == matiere):
-                    moyenne += notes_tuples[i][2]
-                    cpt += 1
-        moyenne = moyenne/cpt
-        print(moyenne)
-    
->   moyenne()
+>   moyenne(notes_tuples,"eleve1","math")
 
-main.py:33: 
+main.py:24: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-    def moyenne():
->       eleve = input("Entrez le nom de l'élève: ")
+notes = [('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ...]
+eleve = 'eleve1', matiere = 'math'
 
-main.py:20: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+    def moyenne(notes,eleve,matiere):
+>     maliste = [i for i in note if i[1] == matiere ]
+E     NameError: name 'note' is not defined
 
-self = <_pytest.capture.DontReadFromInput object at 0x7fed50c19a30>, args = ()
-
-    def read(self, *args):
->       raise OSError(
-            "pytest: reading from stdin while output is captured!  Consider using `-s`."
-        )
-E       OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
-
-/home/stidsem4/.local/lib/python3.9/site-packages/_pytest/capture.py:217: OSError
+main.py:20: NameError
 
 During handling of the above exception, another exception occurred:
 
@@ -345,12 +283,11 @@ test_16_03.py:89: AssertionError
 ----------------------------- Captured stdout call -----------------------------
 la moyenne de l'élévé 1 =  13.0
 la moyenne de l'élévé 1 en math =  12.666666666666666
-Entrez le nom de l'élève: 
 =========================== short test summary info ============================
 FAILED test_16_03.py::Test1603sute::test_10 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_4 - OSError: pytest: reading from st...
+FAILED test_16_03.py::Test1603sute::test_4 - NameError: name 'note' is not de...
 FAILED test_16_03.py::Test1603sute::test_5 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_6 - OSError: pytest: reading from st...
-FAILED test_16_03.py::Test1603sute::test_8 - OSError: pytest: reading from st...
+FAILED test_16_03.py::Test1603sute::test_6 - NameError: name 'note' is not de...
+FAILED test_16_03.py::Test1603sute::test_8 - NameError: name 'note' is not de...
 FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
-========================= 6 failed, 1 passed in 0.22s ==========================
+========================= 6 failed, 1 passed in 0.10s ==========================
